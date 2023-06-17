@@ -59,7 +59,7 @@ variable "fgtsku" {
 
 variable "fgtversion" {
   type    = string
-  default = "7.2.3"
+  default = "7.4.0"
 }
 
 variable "adminusername" {
