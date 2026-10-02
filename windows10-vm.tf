@@ -15,7 +15,7 @@ resource "azurerm_windows_virtual_machine" "windows10-vm" {
   name                = "windows10-vm"
   resource_group_name = azurerm_resource_group.myterraformgroup.name
   location            = var.location
-  size                = "Standard_F2"
+  size                = "Standard_F2als_v6"
   admin_username      = "azureadmin"
   admin_password      = "Fortinet123#"
   network_interface_ids = [
@@ -30,7 +30,7 @@ resource "azurerm_windows_virtual_machine" "windows10-vm" {
   source_image_reference {
     publisher = "MicrosoftWindowsDesktop"
     offer     = "Windows-10"
-    sku       = "win10-22h2-pro"
+    sku       = "win10-22h2-pro-g2"
     version   = "latest"
   }
 }
