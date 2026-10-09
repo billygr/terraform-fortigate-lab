@@ -6,7 +6,7 @@ variable "tenant_id" {}
 
 variable "size" {
   type    = string
-  default = "Standard_F4"
+  default = "Standard_F4als_v7"
 }
 
 // To use custom image
@@ -48,18 +48,18 @@ variable "fgtoffer" {
 }
 
 // BYOL sku: fortinet_fg-vm
-// PAYG sku: fortinet_fg-vm_payg_2022
+// PAYG sku: fortinet_fg-vm_payg_2023_g2
 variable "fgtsku" {
   type = map(any)
   default = {
-    byol = "fortinet_fg-vm"
-    payg = "fortinet_fg-vm_payg_2022"
+    byol = "fortinet_fg-vm_g2"
+    payg = "fortinet_fg-vm_payg_2023_g2"
   }
 }
 
 variable "fgtversion" {
   type    = string
-  default = "7.4.0"
+  default = "7.6.5"
 }
 
 variable "adminusername" {
@@ -74,7 +74,7 @@ variable "adminpassword" {
 
 variable "location" {
   type    = string
-  default = "westeurope"
+  default = "germanywestcentral"
 }
 
 variable "vnetcidr" {
